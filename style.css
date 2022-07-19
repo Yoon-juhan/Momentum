@@ -1,3 +1,6 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
 body {
     margin: 0;
     padding: 0;
@@ -15,7 +18,7 @@ img {
     width: 100%;
     height: 100%;
     top : 0;
-    opacity: 0.8;
+    opacity: 0.7;
     z-index: 1;
 }
 
@@ -28,13 +31,118 @@ img {
 }
 
 #clock {
-    margin-top: 300px;
+    margin-top: 100px;
+    margin-bottom: 0;
     font-size: 100px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 10px 10px 8px black;
 }
 
 #login-form>input {
-    width: 400px;
+    width: 550px;
     height: 100px;
-    font-size: 100px;
-    
+    margin-top: 50px;
+    font-size: 50px;
+    border: none;
+    background: none;
+    text-align: center;
+    color: white;
+}
+
+#login-form>input::placeholder {
+    color: white;
+    opacity: 1;
+    text-shadow: 7px 7px 4px black;
+}
+
+#login-form>input:focus::placeholder {
+    opacity: 0;
+}
+
+#login-form>input:focus {
+    outline: none;
+}
+
+#login-form>button {
+    width: 78px;
+    height: 30px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    color: white;
+    border: 1px solid rgba(255,255,255, 0.8);
+    background: none;
+}
+
+#greeting {
+    color: white;
+    font-size: 50px;
+    margin-top: 70px;
+    margin-bottom: 51px;
+}
+
+#todo-form>input {
+    width: 480px;
+    height: 40px;
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    border: none;
+    background: none;
+    text-decoration: underline;
+    text-decoration-color: rgba(255,255,255, 0.7);
+    text-underline-position: under;
+}
+
+#todo-form>input::placeholder {
+    color: white;
+    opacity: 1;
+    text-shadow: 7px 7px 4px black;
+}
+
+#todo-form>input:focus::placeholder {
+    opacity: 0;
+}
+
+#todo-form>input:focus {
+    outline: none;
+}
+
+#todo-list {
+    list-style: none;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgba(255,255,255, 0.7);
+    text-underline-position: under;
+    font-size: 25px;
+    width: 350px;
+    height: 250px;
+    overflow: auto;
+    text-shadow: 5px 5px 4px black;
+}
+
+#todo-list>li>button {
+    border: none;
+    background: none;
+    font-size: 23px;
+    margin-left: 10px;
+    color: white;
+    opacity: 0.8;
+}
+
+#quote {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 820px;
+}
+
+#quote>span:last-child {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    text-align: center;
 }
