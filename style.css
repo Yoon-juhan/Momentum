@@ -24,15 +24,15 @@ img {
 
 .center {
     width: 500px;
-    height: auto;
+    height: 801px;
     margin: auto;
-    top: 50px;
+    top: 40px;
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
     z-index: 20;
-    border: 2px solid rgba(255,255,255, 0.7);
+    border: 2px solid rgba(255,255,255, 0.2);
     border-radius: 30px;
     backdrop-filter: blur(10px);
     box-shadow: 20px 20px 40px black;
@@ -67,7 +67,7 @@ img {
 #login-form>input::placeholder {
     color: white;
     opacity: 1;
-    text-shadow: 5px 5px 4px black;
+    text-shadow: 4px 4px 3px black;
     transition-duration: 0.5s;
 }
 
@@ -90,6 +90,8 @@ img {
     border: 1px solid rgba(255,255,255, 0.7);
     background: none;
     border-radius: 30px;
+    text-shadow: 3px 3px 3px black;
+    box-shadow: 5px 5px 20px black;
 }
 
 #login-form>button:hover {
@@ -103,7 +105,8 @@ img {
     font-size: 50px;
     margin-top: 70px;
     margin-bottom: 31px;
-    text-shadow: 5px 5px 4px black;
+    text-shadow: 4px 4px 3px black;
+    text-align: center;
 }
 
 
@@ -124,7 +127,7 @@ img {
 #todo-form>input::placeholder {
     color: white;
     opacity: 1;
-    text-shadow: 3px 3px 3px black;
+    text-shadow: 4px 4px 3px black;
     transition-duration: 0.5s;
 }
 
@@ -149,7 +152,7 @@ img {
     height: 250px;
     padding-left: 0;
     overflow: auto;
-    text-shadow: 5px 5px 4px black;
+    text-shadow: 4px 4px 3px black;
 }
 
 #todo-list>li {
@@ -164,6 +167,7 @@ img {
     margin-left: 10px;
     color: white;
     opacity: 0.8;
+    text-shadow: 4px 4px 3px black;
 }
 
 #todo-list>li>button:hover {
@@ -174,7 +178,7 @@ img {
 #quote {
     color: white;
     font-size: 20px;
-    text-shadow: 7px 7px 3px black;
+    text-shadow: 4px 4px 3px black;
     margin-bottom: 30px;
 }
 
@@ -188,14 +192,14 @@ img {
 #weather {
     position: absolute;
     z-index: 10;
-    top: 50px;
+    top: 40px;
     right: 170px;
     color: white;
     font-size: 20px;
     padding: 5px;
     width: auto;
     height: auto;
-    border: 2px solid rgba(255,255,255, 0.7);
+    border: 2px solid rgba(255,255,255, 0.2);
     border-radius: 20px;
     backdrop-filter: blur(10px);
     box-shadow: 5px 5px 10px black;
