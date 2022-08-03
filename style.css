@@ -1,6 +1,7 @@
 * {
     font-family: 'Montserrat', sans-serif;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -17,7 +18,7 @@ img {
     position: absolute;
     width: 100%;
     height: 100%;
-    top : 0;
+    top: 0;
     opacity: 0.9;
     z-index: 1;
 }
@@ -32,7 +33,7 @@ img {
     align-items: center;
     flex-direction: column;
     z-index: 20;
-    border: 2px solid rgba(255,255,255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 30px;
     backdrop-filter: blur(10px);
     box-shadow: 20px 20px 40px black;
@@ -60,7 +61,7 @@ img {
     text-align: center;
     color: white;
     text-decoration: underline;
-    text-decoration-color: rgba(255,255,255, 0.7);
+    text-decoration-color: rgba(255, 255, 255, 0.7);
     text-underline-position: under;
 }
 
@@ -87,7 +88,7 @@ img {
     display: block;
     margin: 0 auto;
     color: white;
-    border: 1px solid rgba(255,255,255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.7);
     background: none;
     border-radius: 30px;
     text-shadow: 3px 3px 3px black;
@@ -114,20 +115,21 @@ img {
     width: 450px;
     height: 40px;
     margin-top: 50px;
+    margin-bottom: 5px;
     font-size: 30px;
     text-align: center;
     color: white;
     border: none;
     background: none;
     text-decoration: underline;
-    text-decoration-color: rgba(255,255,255, 0.7);
+    text-decoration-color: rgba(255, 255, 255, 0.7);
     text-underline-position: under;
+    text-shadow: 4px 4px 4px black;
 }
 
 #todo-form>input::placeholder {
     color: white;
     opacity: 1;
-    text-shadow: 4px 4px 3px black;
     transition-duration: 0.5s;
 }
 
@@ -145,13 +147,13 @@ img {
     color: white;
     text-align: center;
     text-decoration: underline;
-    text-decoration-color: rgba(255,255,255, 0.7);
+    text-decoration-color: rgba(255, 255, 255, 0.7);
     text-underline-position: under;
     font-size: 25px;
     width: 450px;
     height: 250px;
     padding-left: 0;
-    overflow: auto;
+    overflow-y: scroll;
     text-shadow: 4px 4px 3px black;
 }
 
@@ -173,6 +175,21 @@ img {
 #todo-list>li>button:hover {
     transform: scale(1.2);
     transition-duration: 0.5s;
+}
+
+#todo-list::-webkit-scrollbar {
+    width: 5px;
+    box-shadow: 3px 3px 5px black;
+}
+
+#todo-list::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#todo-list::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
 }
 
 #quote {
@@ -199,7 +216,7 @@ img {
     padding: 5px;
     width: auto;
     height: auto;
-    border: 2px solid rgba(255,255,255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     backdrop-filter: blur(10px);
     box-shadow: 5px 5px 10px black;
